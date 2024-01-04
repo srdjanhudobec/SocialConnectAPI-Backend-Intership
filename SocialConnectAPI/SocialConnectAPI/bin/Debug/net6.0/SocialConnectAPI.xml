@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SocialConnectAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SocialConnectAPI.Controllers.KomentarController.CreateComment(SocialConnectAPI.DTOs.Komentari.Post.KomentarPostRequest)">
+            <summary>
+            Dodaj komentar
+            </summary>
+            <param name="komentar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KomentarController.GetById(System.Int32)">
+            <summary>
+            Pretrazi komentar po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KomentarController.UpdateComment(System.Int32,SocialConnectAPI.DTOs.Komentari.Put.KomentarPutRequest)">
+            <summary>
+            Azuriraj komentar po id
+            </summary>
+            <param name="id"></param>
+            <param name="komentar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KomentarController.DeleteComment(System.Int32)">
+            <summary>
+            Obrisi komentar po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.CreateUser(SocialConnectAPI.DTOs.Korisnici.Post.KorisnikPostRequest)">
+            <summary>
+            Dodaj Usera
+            </summary>
+            <param name="korisnik"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.GetById(System.Int32)">
+            <summary>
+            Pretrazi usera po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.GetByFirstAndLastName(System.String,System.String)">
+            <summary>
+            Pretrazi usera po id
+            </summary>
+            <param name="ime"></param>
+            <param name="prezime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.GetByEmail(System.String)">
+            <summary>
+            Pretrazi usera po mailu
+            </summary>
+            <param name="mail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.DeactivateById(System.Int32)">
+            <summary>
+            Deaktiviraj korisnika po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.Update(SocialConnectAPI.DTOs.Korisnici.Put.KorisnikPutRequest)">
+            <summary>
+            Azuriraj korisnika
+            </summary>
+            <param name="korisnik"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.Delete(System.Int32)">
+            <summary>
+            Obrisi korisnika po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.Follow(System.Int32,System.Int32)">
+            <summary>
+            Zaprati korisnika
+            </summary>
+            <param name="pratiocId"></param>
+            <param name="zapracenId"></param>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.KorisnikController.Lajk(SocialConnectAPI.Models.Lajk)">
+            <summary>
+            Lajkuj objavu
+            </summary>
+            <param name="lajk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.CreatePost(SocialConnectAPI.DTOs.Objave.Put.ObjavaPostRequest)">
+            <summary>
+            Dodaj objavu
+            </summary>
+            <param name="objava"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.GetPostById(System.Int32)">
+            <summary>
+            Pretrazi objavu po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.GetPostByCreatorId(System.Int32)">
+            <summary>
+            Pretrazi objavu po kreator id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.GetPostByTag(System.String)">
+            <summary>
+            Pretrazi objavu po tagu
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.DeletePost(System.Int32)">
+            <summary>
+            Obrisi objavu po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.ArchievePost(System.Int32)">
+            <summary>
+            Arhiviraj objavu po id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocialConnectAPI.Controllers.ObjaveController.UpdatePost(System.Int32,SocialConnectAPI.DTOs.Objave.Put.ObjavaPutRequest)">
+            <summary>
+            Azuriraj objavu
+            </summary>
+            <param name="objavaId"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SocialConnectAPI.Migrations.Init">
+            <inheritdoc />
+        </member>
+        <member name="M:SocialConnectAPI.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SocialConnectAPI.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SocialConnectAPI.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
